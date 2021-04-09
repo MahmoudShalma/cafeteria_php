@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2020 at 12:09 AM
+-- Generation Time: Apr 09, 2021 at 04:40 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -38,8 +38,7 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`catagory_Id`, `catagory_name`) VALUES
 (1, 'Hot Drinks'),
-(2, 'Cold Drinks'),
-(3, NULL);
+(2, 'Cold Drinks');
 
 -- --------------------------------------------------------
 
@@ -61,25 +60,15 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_Id`, `order_action`, `order_price`, `user_Id`, `status_Id`, `date`) VALUES
-(2, 'Done', 5, 4, 1, '2019-11-12 11:52:19'),
-(3, 'Deliver', 50, 1, 1, '2016-11-12 12:08:13'),
-(4, 'Done', 5, 1, 1, '2020-11-12 13:06:42'),
-(12, 'Done', 13, 1, 1, '2020-11-12 14:21:42'),
-(13, 'Done', 60, 4, 1, '2020-11-12 14:22:32'),
-(14, 'Done', 13, 2, 1, '2020-11-12 14:28:20'),
-(15, 'Done', 23, 2, 1, '2020-11-12 14:29:34'),
-(16, 'Done', 66, 4, 1, '2020-11-12 14:30:33'),
-(17, 'Done', 54, 2, 1, '2020-11-14 17:29:41'),
-(18, 'Done', 5, 1, 1, '2020-11-14 18:15:53'),
-(19, 'Done', 70, 2, 1, '2020-11-14 18:17:44'),
-(20, 'Done', 49, 2, 1, '2020-11-15 15:59:45'),
-(24, 'Done', 12, 6, 4, '2020-11-21 22:35:04'),
-(25, 'Done', 32, 6, 1, '2020-11-21 22:35:13'),
-(26, 'Done', 20, 6, 2, '2020-11-21 22:35:18'),
-(27, 'Done', 46, 6, 4, '2020-11-21 22:35:25'),
-(28, 'Done', 18, 6, 4, '2020-11-21 22:42:48'),
-(29, 'Done', 22, 6, 3, '2020-11-21 23:00:28'),
-(30, 'Done', 29, 6, 3, '2020-11-21 23:07:40');
+(36, 'Done', 56, 6, 4, '2021-04-09 00:53:22'),
+(37, 'Done', 12, 6, 4, '2021-04-09 00:59:51'),
+(38, 'Done', 34, 6, 3, '2021-04-09 01:11:15'),
+(39, 'Done', 44, 6, 4, '2021-04-09 01:18:25'),
+(40, 'Done', 12, 6, 4, '2021-04-09 01:21:58'),
+(41, 'Done', 28, 6, 3, '2021-04-09 01:30:48'),
+(42, 'Done', 64, 6, 4, '2021-04-09 01:31:37'),
+(43, 'Done', 28, 6, 3, '2021-04-09 01:34:37'),
+(44, 'Done', 30, 6, 3, '2021-04-09 01:34:45');
 
 -- --------------------------------------------------------
 
@@ -143,38 +132,27 @@ CREATE TABLE `userorder` (
 --
 
 INSERT INTO `userorder` (`product_Id`, `order_Id`, `quantity`) VALUES
-(1, 14, 1),
-(1, 15, 3),
-(1, 16, 4),
-(1, 17, 2),
-(1, 18, 1),
-(1, 19, 6),
-(1, 20, 3),
-(1, 27, 2),
-(1, 30, 1),
-(2, 14, 1),
-(2, 15, 1),
-(2, 16, 1),
-(2, 17, 2),
-(2, 19, 2),
-(2, 20, 2),
-(2, 25, 4),
-(2, 27, 2),
-(2, 29, 2),
-(2, 30, 1),
-(3, 16, 3),
-(3, 17, 3),
-(3, 19, 4),
-(3, 20, 3),
-(3, 24, 2),
-(3, 28, 3),
-(3, 29, 1),
-(3, 30, 1),
-(4, 16, 2),
-(4, 17, 1),
-(4, 26, 2),
-(4, 27, 2),
-(4, 30, 1);
+(1, 36, 2),
+(1, 39, 2),
+(1, 42, 2),
+(2, 36, 3),
+(2, 38, 2),
+(2, 39, 1),
+(2, 41, 1),
+(2, 42, 2),
+(2, 43, 2),
+(3, 36, 2),
+(3, 37, 2),
+(3, 38, 3),
+(3, 39, 1),
+(3, 40, 2),
+(3, 42, 3),
+(3, 43, 2),
+(4, 36, 1),
+(4, 39, 2),
+(4, 41, 2),
+(4, 42, 2),
+(4, 44, 3);
 
 -- --------------------------------------------------------
 
@@ -197,11 +175,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`Id`, `user_name`, `user_email`, `user_password`, `user_profile_picture`, `user_phone`, `user_type`) VALUES
-(1, 'mahmoud', 'love_egypt170@yahoo.com', '123456789', 'hjjhbhjbkkj.jpg', 1156526691, 'user'),
-(2, 'Eslam', 'eslamanwer67@gmail.com', '123123', 'https://randomuser.me/api/portraits/med/men/75.jpg', 1114705952, 'user'),
-(4, 'Hossam', 'Hossam@gmail.com', '123123', 'asdadsads', 111, 'user'),
-(5, 'mahmoud shalma', 'love_egypt180@yahoo.com', '1234567891', 'hjjhbhjbkkj.jpg', 1156526691, 'user'),
-(6, 'user', 'user@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'https://randomuser.me/api/portraits/med/men/75.jpg', 123456789, 'user');
+(1, 'admin', 'admin@admin.com', '25f9e794323b453885f5181f1b624d0b', 'https://randomuser.me/api/portraits/med/men/75.jpg', 1156526691, 'admin'),
+(6, 'user', 'user@user.com', '25f9e794323b453885f5181f1b624d0b', 'https://randomuser.me/api/portraits/med/men/75.jpg', 123456789, 'user');
 
 --
 -- Indexes for dumped tables
@@ -256,13 +231,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `catagory_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `catagory_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `order_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -280,7 +255,7 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables

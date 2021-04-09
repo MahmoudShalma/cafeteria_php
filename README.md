@@ -1,3 +1,7 @@
 # cafeteria_php
 
-![user part](https://github.com/MahmoudShalma/cafeteria_php/blob/main/user.gif)
+## User Side
+![user side](https://github.com/MahmoudShalma/cafeteria_php/blob/main/user.gif)
+
+## Admin Side
+![admin side](https://github.com/MahmoudShalma/cafeteria_php/blob/main/amin.gif)
